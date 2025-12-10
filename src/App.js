@@ -1,24 +1,5 @@
 import "./App.css";
 
-const projects = [
-  {
-    title: "Project One",
-    description:
-      "A short description of what this project does, the problem it solves, and what you learned while building it.",
-    tech: ["React", "CSS", "API"],
-    live: "",
-    code: "",
-  },
-  {
-    title: "Project Two",
-    description:
-      "Another focused project, for example a responsive landing page or a small component library.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    live: "",
-    code: "",
-  },
-];
-
 function App() {
   return (
     <div className="app">
