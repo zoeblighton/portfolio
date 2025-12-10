@@ -7,9 +7,9 @@ function App() {
         <div>
           <h1>Zoe Blighton</h1>
           <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
+            <a href="#about">About</a> {" | "}
+            <a href="#projects">Projects</a> {" | "}
+            <a href="#resume">Resume</a> {" | "}
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -32,7 +32,7 @@ function App() {
                 <img
                   src={require("./headshot.jpg")}
                   alt="Zoe Blighton"
-                  width={500}
+                  width={300}
                 />
               </div>
             </div>
@@ -52,6 +52,16 @@ function App() {
               >
                 GitHub
               </a>
+
+              {" | "}
+              <a
+                href="https://www.shecodes.io/graduates/159152-zoe-blighton"
+                target="_blank"
+                rel="noreferrer"
+              >
+                SheCodes
+              </a>
+
               {" | "}
               <a href="mailto:zoeblighton.seo@gmail.com">Email</a>
             </div>
@@ -65,7 +75,47 @@ function App() {
 
         <section id="resume">
           <h2>Resume</h2>
-          <p>Link to my resume will go here.</p>
+          <p>You can view or download my resume here:</p>
+          <p>
+            <a href="" target="_blank" rel="noreferrer">
+              View Resume
+            </a>
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>
+            Want to collaborate or just say hi? Reach out via the form below or
+            any of my social links.
+          </p>
+
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Thanks for your message!");
+            }}
+          >
+            <div>
+              <label htmlFor="name">Name</label>
+              <br />
+              <input id="name" name="name" required />
+            </div>
+
+            <div>
+              <label htmlFor="email">Email</label>
+              <br />
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div>
+              <label htmlFor="message">Message</label>
+              <br />
+              <textarea id="message" name="message" rows="4" required />
+            </div>
+
+            <button type="submit">Send message</button>
+          </form>
         </section>
 
         <section id="contact">
