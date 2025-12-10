@@ -62,11 +62,11 @@ function App() {
               <li>API</li>
             </ul>
             <p>
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 Live
               </a>{" "}
               |{" "}
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 Code
               </a>
             </p>
@@ -84,11 +84,11 @@ function App() {
               <li>JavaScript</li>
             </ul>
             <p>
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 Live
               </a>{" "}
               |{" "}
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 Code
               </a>
             </p>
@@ -106,11 +106,11 @@ function App() {
               <li>API</li>
             </ul>
             <p>
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 Live
               </a>{" "}
               |{" "}
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noreferrer">
                 Code
               </a>
             </p>
@@ -121,7 +121,7 @@ function App() {
           <h2>Resume</h2>
           <p>You can view or download my resume here:</p>
           <p>
-            <a href="" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               View Resume
             </a>
           </p>
