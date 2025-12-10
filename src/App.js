@@ -61,15 +61,7 @@ function App() {
               <li>CSS</li>
               <li>API</li>
             </ul>
-            <p>
-              <a href="#" target="_blank" rel="noreferrer">
-                Live
-              </a>{" "}
-              |{" "}
-              <a href="#" target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </p>
+            <p>Live | Code</p>
           </article>
 
           <article className="project-card">
@@ -83,15 +75,7 @@ function App() {
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <p>
-              <a href="#" target="_blank" rel="noreferrer">
-                Live
-              </a>{" "}
-              |{" "}
-              <a href="#" target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </p>
+            <p>Live | Code</p>
           </article>
 
           <article className="project-card">
@@ -105,26 +89,14 @@ function App() {
               <li>CSS</li>
               <li>API</li>
             </ul>
-            <p>
-              <a href="#" target="_blank" rel="noreferrer">
-                Live
-              </a>{" "}
-              |{" "}
-              <a href="#" target="_blank" rel="noreferrer">
-                Code
-              </a>
-            </p>
+            <p>Live | Code</p>
           </article>
         </section>
 
         <section id="resume">
           <h2>Resume</h2>
           <p>You can view or download my resume here:</p>
-          <p>
-            <a href="#" target="_blank" rel="noreferrer">
-              View Resume
-            </a>
-          </p>
+          <p>View Resume</p>
         </section>
 
         <section id="contact">
