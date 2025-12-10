@@ -6,16 +6,16 @@ const projects = [
     description:
       "A short description of what this project does, the problem it solves, and what you learned while building it.",
     tech: ["React", "CSS", "API"],
-    live: "https://your-project-live-link.com",
-    code: "https://github.com/your-github/your-project",
+    live: "",
+    code: "",
   },
   {
     title: "Project Two",
     description:
       "Another focused project, for example a responsive landing page or a small component library.",
     tech: ["HTML", "CSS", "JavaScript"],
-    live: "https://your-project-two-live-link.com",
-    code: "https://github.com/your-github/your-second-project",
+    live: "",
+    code: "",
   },
 ];
 
@@ -81,19 +81,11 @@ function App() {
               <li>API</li>
             </ul>
             <p>
-              <a
-                href="https://your-project-live-link.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Live
               </a>{" "}
               |{" "}
-              <a
-                href="https://github.com/your-github/your-project"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Code
               </a>
             </p>
@@ -111,19 +103,11 @@ function App() {
               <li>JavaScript</li>
             </ul>
             <p>
-              <a
-                href="https://your-project-two-live-link.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Live
               </a>{" "}
               |{" "}
-              <a
-                href="https://github.com/your-github/your-second-project"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Code
               </a>
             </p>
@@ -141,19 +125,11 @@ function App() {
               <li>API</li>
             </ul>
             <p>
-              <a
-                href="https://your-project-live-link.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Live
               </a>{" "}
               |{" "}
-              <a
-                href="https://github.com/your-github/your-project"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Code
               </a>
             </p>
