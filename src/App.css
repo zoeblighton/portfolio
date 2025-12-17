@@ -58,13 +58,15 @@ header a:hover {
 main {
   flex: 1;
 }
-
 section {
   max-width: 960px;
   margin: 0 auto;
   padding: 2.5rem 1rem;
 }
 
+section + section {
+  border-top: 1px solid #e5e7eb;
+}
 section h2 {
   margin-bottom: 1.5rem;
 }
@@ -103,6 +105,14 @@ section h2 {
   margin-top: 2.5rem;
 }
 
+.social-links img {
+  transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
 #projects article {
   background: #ffffff;
   border-radius: 0.75rem;
@@ -111,7 +121,11 @@ section h2 {
   border: 1px solid #e5e7eb;
   margin-bottom: 1rem;
 }
-
+#projects article:hover,
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
+}
 .project-card {
   background: #ffffff;
   border-radius: 0.75rem;
@@ -119,6 +133,11 @@ section h2 {
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
   border: 1px solid #e5e7eb;
   margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: scale(1.005);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
 }
 
 .project-tags {
@@ -134,7 +153,21 @@ section h2 {
   font-size: 0.75rem;
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
-  background: #e5e7eb;
+  background: #e3eaf5;
+  color: #374151;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.project-links a {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
 }
 
 form {

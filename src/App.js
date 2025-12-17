@@ -49,19 +49,63 @@ function App() {
 
         <section id="projects">
           <h2>Personal Projects</h2>
+          <div className="shecodes-profile">
+            View my SheCodes profile <br />
+            <a
+              href="https://www.shecodes.io/graduates/159152-zoe-blighton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("./shecodes-icon.png")}
+                alt="SheCodes Icon"
+                width={50}
+              />
+            </a>
+          </div>
 
           <article className="project-card">
-            <h3>Project One</h3>
+            <h3>Dictionary App</h3>
             <p>
-              A short description of what this project does, the problem it
-              solves, and what you learned while building it.
+              I built a React dictionary app that allows users to type in a word
+              and instantly receive dictionary results. The app displays
+              definitions, parts of speech, example usage, and related word
+              information, depending on the API response. The project
+              demonstrates my ability to work with real-world data, manage user
+              input, and present dynamic results in a clean, accessible
+              interface. It integrates two separate APIs—one for retrieving
+              dictionary data and another for fetching related images—showcasing
+              my experience handling multiple asynchronous data sources within a
+              single application.{" "}
             </p>
+            <div>
+              <img
+                className="dictionary-screenshot"
+                src={require("./dictionary-app-screenshot.png")}
+                alt="Dictionary App Screenshot"
+                width={600}
+              />
+            </div>
+
             <ul className="project-tags">
               <li>React</li>
-              <li>CSS</li>
-              <li>API</li>
+              <li>Async JavaScript</li>
+              <li>APIs</li>
+              <li>Hooks</li>
+              <li>REST</li>
+              <li>Netlify</li>
             </ul>
-            <p>Live | Code</p>
+            <div className="project-links">
+              {" "}
+              <a
+                href="https://enchanting-gingersnap-0e85cd.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>{" "}
+              | Code
+            </div>
           </article>
 
           <article className="project-card">
@@ -75,7 +119,7 @@ function App() {
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <p>Live | Code</p>
+            <div className="project-links">Live | Code</div>
           </article>
 
           <article className="project-card">
@@ -89,7 +133,7 @@ function App() {
               <li>CSS</li>
               <li>API</li>
             </ul>
-            <p>Live | Code</p>
+            <div className="project-links">Live | Code</div>
           </article>
         </section>
 
@@ -113,19 +157,19 @@ function App() {
             }}
           >
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name:</label>
               <br />
               <input id="name" name="name" required />
             </div>
 
             <div>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email:</label>
               <br />
               <input id="email" name="email" type="email" required />
             </div>
 
             <div>
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Message:</label>
               <br />
               <textarea id="message" name="message" rows="4" required />
             </div>
