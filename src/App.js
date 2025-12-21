@@ -104,7 +104,13 @@ function App() {
               >
                 Live
               </a>{" "}
-              | Code
+              <a
+                href="https://github.com/zoeblighton/dictionary-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
             </div>
           </article>
 
@@ -119,7 +125,23 @@ function App() {
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <div className="project-links">Live | Code</div>
+            <div className="project-links">
+              {" "}
+              <a
+                href="https://enchanting-gingersnap-0e85cd.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>{" "}
+              <a
+                href="https://github.com/zoeblighton/dictionary-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </article>
 
           <article className="project-card">
@@ -133,7 +155,23 @@ function App() {
               <li>CSS</li>
               <li>API</li>
             </ul>
-            <div className="project-links">Live | Code</div>
+            <div className="project-links">
+              {" "}
+              <a
+                href="https://enchanting-gingersnap-0e85cd.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>{" "}
+              <a
+                href="https://github.com/zoeblighton/dictionary-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+            </div>
           </article>
         </section>
 
