@@ -253,3 +253,15 @@ footer p {
     display: block;
   }
 }
+.resume-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.resume-links a {
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
