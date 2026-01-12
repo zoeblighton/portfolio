@@ -255,12 +255,14 @@ footer p {
 }
 .resume-links {
   display: flex;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
 
 .resume-links a {
   text-decoration: none;
+  align-items: center;
   border: 1px solid #ccc;
   padding: 10px 12px;
   border-radius: 10px;
