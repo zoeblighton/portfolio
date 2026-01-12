@@ -115,27 +115,39 @@ function App() {
           </article>
 
           <article className="project-card">
-            <h3>Project Two</h3>
+            <h3>Weather App</h3>
             <p>
-              Another focused project, for example a responsive landing page or
-              a small component library.
+              I built a A responsive weather app built with React that lets
+              users search any city to view current conditions (temperature,
+              humidity, wind, description + icon) and a 5-day forecast. It uses
+              Axios to fetch data from the SheCodes Weather API, manages UI
+              state with React Hooks, and includes error handling for invalid
+              searches.
             </p>
+            <div>
+              <img
+                className="weather-screenshot"
+                src={require("./weather-app-screenshot.png")}
+                alt="Weather App Screenshot"
+                width={600}
+              />
+            </div>
             <ul className="project-tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+              <li>React</li>
+              <li>Axios</li>
+              <li>API</li>
             </ul>
             <div className="project-links">
               {" "}
               <a
-                href="https://enchanting-gingersnap-0e85cd.netlify.app/"
+                href="https://steady-cendol-19e8c9.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Live
               </a>{" "}
               <a
-                href="https://github.com/zoeblighton/dictionary-project"
+                href="https://github.com/zoeblighton/weather-react-app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
