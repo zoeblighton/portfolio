@@ -255,9 +255,12 @@ footer p {
 }
 .resume-links {
   display: flex;
+  padding: 0.15rem 0.5rem;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   flex-wrap: wrap;
+  display: block;
+  margin: 0 auto;
 }
 
 .resume-links a {

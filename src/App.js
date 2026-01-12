@@ -207,10 +207,6 @@ function App() {
             >
               View / Download (Word)
             </a>
-
-            <a href="/resume/zoe-blighton-resume.docx" download>
-              Download
-            </a>
           </div>
         </section>
 
