@@ -83,7 +83,6 @@ function App() {
                 className="dictionary-screenshot"
                 src={require("./dictionary-app-screenshot.png")}
                 alt="Dictionary App Screenshot"
-                width={600}
               />
             </div>
 
@@ -129,7 +128,6 @@ function App() {
                 className="weather-screenshot"
                 src={require("./weather-app-screenshot.png")}
                 alt="Weather App Screenshot"
-                width={600}
               />
             </div>
             <ul className="project-tags">

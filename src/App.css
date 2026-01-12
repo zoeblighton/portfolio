@@ -169,6 +169,20 @@ section h2 {
   border-radius: 999px;
   border: 1px solid #d1d5db;
 }
+.weather-screenshot {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.dictionary-screenshot {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 form {
   max-width: 480px;
