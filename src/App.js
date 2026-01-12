@@ -155,27 +155,37 @@ function App() {
           </article>
 
           <article className="project-card">
-            <h3>Project Three</h3>
+            <h3>Pokemon generator</h3>
             <p>
-              A short description of what this project does, the problem it
-              solves, and what you learned while building it.
+              As a themed project, I created a React app that lets users
+              generate random Pokémon, search by name or ID, and build a
+              six-Pokémon party inspired by the games. It uses the PokéAPI to
+              fetch and display Pokémon details, artwork, types, and Pokédex
+              descriptions in a Game Boy–style interface.
             </p>
+            <div>
+              <img
+                className="pokemon-screenshot"
+                src={require("./pokemon-screenshot.png")}
+                alt="Pokemon Screenshot"
+              />
+            </div>
             <ul className="project-tags">
-              <li>Python</li>
+              <li>React</li>
               <li>CSS</li>
               <li>API</li>
             </ul>
             <div className="project-links">
               {" "}
               <a
-                href="https://enchanting-gingersnap-0e85cd.netlify.app/"
+                href="https://pokemon-randomiser.netlify.app//"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Live
               </a>{" "}
               <a
-                href="https://github.com/zoeblighton/dictionary-project"
+                href="https://github.com/zoeblighton/pokemon-random-search"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -188,7 +198,20 @@ function App() {
         <section id="resume">
           <h2>Resume</h2>
           <p>You can view or download my resume here:</p>
-          <p>View Resume</p>
+
+          <div className="resume-links">
+            <a
+              href="/resume/zoe-blighton-resume.docx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View / Download (Word)
+            </a>
+
+            <a href="/resume/zoe-blighton-resume.docx" download>
+              Download
+            </a>
+          </div>
         </section>
 
         <section id="contact">
