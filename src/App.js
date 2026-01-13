@@ -201,11 +201,11 @@ function App() {
 
           <div className="resume-links">
             <a
-              href="/resume/zoe-blighton-resume.docx"
+              href="/resume/zoe-blighton-resume-PDF.docx"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View / Download (Word)
+              Zoe Blighton Resume PDF
             </a>
           </div>
         </section>
