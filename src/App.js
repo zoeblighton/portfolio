@@ -116,12 +116,11 @@ function App() {
           <article className="project-card">
             <h3>Weather App</h3>
             <p>
-              I built a A responsive weather app built with React that lets
-              users search any city to view current conditions (temperature,
-              humidity, wind, description + icon) and a 5-day forecast. It uses
-              Axios to fetch data from the SheCodes Weather API, manages UI
-              state with React Hooks, and includes error handling for invalid
-              searches.
+              I built a responsive weather app using React that lets users
+              search any city to view current conditions (temperature, humidity,
+              wind, description + icon) and a 5-day forecast. It uses Axios to
+              fetch data from the SheCodes Weather API, manages UI state with
+              React Hooks, and includes error handling for invalid searches.
             </p>
             <div>
               <img
@@ -197,18 +196,16 @@ function App() {
 
         <section id="resume">
           <h2>Resume</h2>
-          <p>You can view or download my resume here:</p>
+          <p>View my resume here:</p>
 
           <div className="resume-links">
             <a
               href="/resume/zoe-blighton-resume-PDF.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="btn"
             >
-              View Resume
-            </a>
-            <a href="/resume/zoe-blighton-resume-PDF.pdf" download>
-              Download Resume (PDF)
+              View
             </a>
           </div>
         </section>
@@ -244,7 +241,9 @@ function App() {
               <textarea id="message" name="message" rows="4" required />
             </div>
 
-            <button type="submit">Send message</button>
+            <button className="submit-button" type="submit">
+              Send message
+            </button>
           </form>
           <div className="social-links">
             <a
