@@ -207,6 +207,13 @@ function App() {
             >
               View
             </a>
+            <a
+              href="/resume/zoe-blighton-resume-PDF.pdf"
+              download
+              className="btn"
+            >
+              Download (PDF)
+            </a>
           </div>
         </section>
 

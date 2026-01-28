@@ -23,6 +23,15 @@
 body {
   margin: 0;
 }
+input:focus,
+textarea:focus,
+.btn:focus-visible,
+.submit-button:focus-visible,
+.project-links a:focus-visible,
+header a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .app {
   min-height: 100vh;
@@ -60,7 +69,8 @@ header a {
 }
 
 header a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--accent-dark);
 }
 
 main {
@@ -70,6 +80,20 @@ section {
   max-width: 960px;
   margin: 0 auto;
   padding: 2.5rem 1rem;
+}
+section h2 {
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: 0.5rem;
+  background: var(--accent);
+  opacity: 0.6;
+  border-radius: 999px;
 }
 
 section + section {
@@ -260,9 +284,10 @@ footer p {
 }
 
 .resume-links {
-  display: block;
-  content: center;
+  display: flex;
   gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .btn,
