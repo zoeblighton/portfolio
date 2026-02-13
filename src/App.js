@@ -70,11 +70,10 @@ function App() {
           <article className="project-card">
             <h3>Triple Moon – Living Magically (Client Project)</h3>
             <p>
-              Triple Moon is a client project built in React to support the
-              launch of the first edition of <em>Living Magically</em>. The
-              client gave me full creative direction over the design, allowing
-              me to define the visual identity, layout structure, and user
-              experience from concept to launch.
+              Triple Moon is a client project built in React. The client gave me
+              full creative direction over the design, allowing me to define the
+              visual identity, layout structure, and user experience from
+              concept to launch.
             </p>
             <p>
               I developed the site using a component-based architecture,
