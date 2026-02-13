@@ -191,21 +191,10 @@ section h2 {
   color: #374151;
 }
 
-.weather-screenshot {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.dictionary-screenshot {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.pokemon-screenshot {
+.weather-screenshot,
+.dictionary-screenshot,
+.pokemon-screenshot,
+.triplemoon-screenshot {
   width: 100%;
   max-width: 600px;
   height: auto;

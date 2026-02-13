@@ -65,6 +65,88 @@ function App() {
           </div>
 
           <article className="project-card">
+            <h3>Triple Moon – Living Magically (Client Project)</h3>
+            <p>
+              Triple Moon is a client project built in React to support the
+              launch of the first edition of <em>Living Magically</em>. The
+              client gave me full creative direction over the design, allowing
+              me to define the visual identity, layout structure, and user
+              experience from concept to launch.
+            </p>
+            <p>
+              I developed the site using a component-based architecture,
+              implemented responsive layouts for all devices, and structured
+              semantic HTML to support SEO best practices. The project
+              demonstrates end-to-end delivery — from design decisions through
+              development and deployment.
+            </p>
+            <div>
+              <div className="project-outcomes">
+                <h4>Project Outcomes</h4>
+                <ul>
+                  <li>
+                    Delivered a fully responsive React application from concept
+                    to launch
+                  </li>
+                  <li>
+                    Led creative direction and UX decisions with full design
+                    autonomy
+                  </li>
+                  <li>
+                    Structured semantic HTML to support SEO best practices
+                  </li>
+                  <li>
+                    Deployed the site independently, managing build and
+                    production release
+                  </li>
+                  <li>
+                    Established scalable component architecture for future
+                    content expansion
+                  </li>
+                </ul>
+              </div>
+
+              <img
+                className="triplemoon-screenshot"
+                src={require("./triplemoon-screenshot.png")}
+                alt="Triple Moon Living Magically Website Screenshot"
+              />
+            </div>
+            <div className="project-role">
+              <h4>My Role</h4>
+              <p>
+                Sole Front-End Developer & Designer. Responsible for UX design,
+                component architecture, responsive implementation, SEO
+                structure, and production deployment.
+              </p>
+            </div>
+
+            <ul className="project-tags">
+              <li>React</li>
+              <li>Client Project</li>
+              <li>UI/UX Design</li>
+              <li>Responsive Design</li>
+              <li>SEO</li>
+            </ul>
+            <div className="project-links">
+              <a
+                href="https://triplemoon.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/zoeblighton/triple-moon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+            </div>
+          </article>
+
+          <article className="project-card">
             <h3>Dictionary App</h3>
             <p>
               I built a React dictionary app that allows users to type in a word
