@@ -32,16 +32,19 @@ function App() {
 
               <p>
                 <strong> Hi, I'm Zoe.👋</strong>
-                <br />I build simple, responsive front-end experiences using
-                React, Python, and modern web tooling. I’m a driven,
-                solution-seeking individual with a strong mindset for growth,
-                and I’ve been strengthening my front-end skills through hands-on
-                training with SheCodes. Before moving into tech, I progressed
-                into a management role in an early-years setting, where I
-                developed strong communication, organisation, and
-                problem-solving skills — all of which support my work as a
-                front-end developer. When I’m not coding, I enjoy climbing,
-                practicing yoga, and exploring nature with my dog, Alfie.
+                <br />I build responsive, SEO-conscious web applications using
+                React and modern front-end tooling. I specialise in translating
+                ideas into clean, user-focused interfaces, delivering projects
+                from concept and design direction through to production
+                deployment. <br />
+                My background in management within an early-years setting
+                strengthened my communication, organisation, and problem-solving
+                skills, which now support my work with clients and collaborative
+                projects in tech. I’m driven by continuous growth and enjoy
+                building thoughtful digital experiences that balance usability,
+                performance, and visual clarity. <br /> Outside of development,
+                you’ll find me climbing, practicing yoga, or exploring nature
+                with my dog, Alfie.
               </p>
             </div>
           </div>
@@ -77,12 +80,27 @@ function App() {
               I developed the site using a component-based architecture,
               implemented responsive layouts for all devices, and structured
               semantic HTML to support SEO best practices. The project
-              demonstrates end-to-end delivery — from design decisions through
+              demonstrates end-to-end delivery, from design decisions through
               development and deployment.
             </p>
             <div>
-              <div className="project-outcomes">
-                <h4>Project Outcomes</h4>
+              <img
+                className="triplemoon-screenshot"
+                src={require("./triplemoon-screenshot.png")}
+                alt="Triple Moon Living Magically Website Screenshot"
+              />
+            </div>
+            <div className="project-role">
+              <h4>My Role</h4>
+              <p>
+                Sole Front-End Developer & Designer. Responsible for UX design,
+                component architecture, responsive implementation, SEO
+                structure, and production deployment.
+              </p>
+            </div>
+            <div className="project-outcomes">
+              <h4>Project Outcomes</h4>
+              <p>
                 <ul>
                   <li>
                     Delivered a fully responsive React application from concept
@@ -104,20 +122,6 @@ function App() {
                     content expansion
                   </li>
                 </ul>
-              </div>
-
-              <img
-                className="triplemoon-screenshot"
-                src={require("./triplemoon-screenshot.png")}
-                alt="Triple Moon Living Magically Website Screenshot"
-              />
-            </div>
-            <div className="project-role">
-              <h4>My Role</h4>
-              <p>
-                Sole Front-End Developer & Designer. Responsible for UX design,
-                component architecture, responsive implementation, SEO
-                structure, and production deployment.
               </p>
             </div>
 
@@ -134,8 +138,8 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live
-              </a>
+                Live{" "}
+              </a>{" "}
               <a
                 href="https://github.com/zoeblighton/triple-moon"
                 target="_blank"
