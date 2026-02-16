@@ -1,4 +1,5 @@
 import "./App.css";
+import emailjs from "@emailjs/browser";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <section id="about">
           <div>
             <div>
-              <h2>Junior Front-end Developer</h2>
+              <h2>Front-end Web Developer</h2>
 
               <p>Based in Colchester, UK</p>
               <div>
@@ -52,20 +53,6 @@ function App() {
 
         <section id="projects">
           <h2>Personal Projects</h2>
-          <div className="shecodes-profile">
-            View my SheCodes profile <br />
-            <a
-              href="https://www.shecodes.io/graduates/159152-zoe-blighton"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={require("./shecodes-icon.png")}
-                alt="SheCodes Icon"
-                width={50}
-              />
-            </a>
-          </div>
 
           <article className="project-card">
             <h3>Triple Moon – Living Magically (Client Project)</h3>
@@ -312,19 +299,36 @@ function App() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              alert("Thanks for your message, I will be in touch!");
+
+              emailjs
+                .sendForm(
+                  "service_kqxk9ng",
+                  "template_r0g2tgd",
+                  e.target,
+                  "Abr_bfzKgCiKd3O7y",
+                )
+                .then(
+                  () => {
+                    alert("Message sent! I’ll be in touch soon.");
+                    e.target.reset();
+                  },
+                  (error) => {
+                    console.error("EmailJS error:", error);
+                    alert("Failed to send. Please try again.");
+                  },
+                );
             }}
           >
             <div>
               <label htmlFor="name">Name:</label>
               <br />
-              <input id="name" name="name" required />
+              <input id="name" name="from_name" required />
             </div>
 
             <div>
               <label htmlFor="email">Email:</label>
               <br />
-              <input id="email" name="email" type="email" required />
+              <input id="email" name="reply_to" type="email" required />
             </div>
 
             <div>
