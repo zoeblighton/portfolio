@@ -31,7 +31,6 @@ function App() {
         <div>
           <h1>Zoe Blighton</h1>
 
-          {/* NEW: Hamburger button (mobile only via CSS) */}
           <button
             type="button"
             className="menu-button"
@@ -60,13 +59,11 @@ function App() {
         </div>
       </header>
 
-      {/* ...rest of your file stays the same... */}
-
       <main>
         <section id="about">
           <div>
             <div>
-              <h2>Front-end Web Developer</h2>
+              <h2>Front-End Web Developer</h2>
 
               <p>Based in Colchester, UK</p>
               <div>
@@ -77,7 +74,7 @@ function App() {
                 />
               </div>
 
-              <p>
+              <p className="about-card">
                 <strong> Hi, I'm Zoe.👋</strong>
                 <br />I build responsive, SEO-conscious web applications using
                 React and modern front-end tooling. I specialise in translating
@@ -98,7 +95,7 @@ function App() {
         </section>
 
         <section id="projects">
-          <h2>Personal Projects</h2>
+          <h2>Projects</h2>
 
           <article className="project-card">
             <h3>Triple Moon – Living Magically (Client Project)</h3>

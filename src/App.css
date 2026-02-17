@@ -74,7 +74,7 @@ header a:hover {
 }
 /* --- Mobile hamburger --- */
 .menu-button {
-  display: none; /* shown on mobile via media query */
+  display: none;
   background: transparent;
   border: 1px solid #e5e7eb;
   border-radius: 0.6rem;
@@ -109,20 +109,18 @@ header a:hover {
 
 .hamburger::before {
   top: 0;
-  box-shadow: 0 7px 0 #374151; /* middle line */
+  box-shadow: 0 7px 0 #374151;
 }
 
 .hamburger::after {
   bottom: 0;
 }
 
-/* Your existing desktop nav works as-is; just give it a class name */
 .site-nav {
   display: flex;
   gap: 1rem;
 }
 
-/* Mobile behaviour */
 @media (max-width: 640px) {
   .menu-button {
     display: inline-flex;
@@ -151,7 +149,7 @@ header a:hover {
   }
 
   header > div {
-    position: relative; /* makes the dropdown anchor to header container */
+    position: relative;
   }
 }
 
@@ -183,6 +181,14 @@ section + section {
 }
 section h2 {
   margin-bottom: 1.5rem;
+}
+
+.about-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
+  border: 1px solid #e5e7eb;
 }
 
 #about > div {
