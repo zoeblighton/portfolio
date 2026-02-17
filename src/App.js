@@ -1,7 +1,8 @@
 import "./App.css";
 import emailjs from "@emailjs/browser";
-
+import { useState } from "react";
 function App() {
+  const [sent, setSent] = useState(false);
   return (
     <div className="app">
       <header>
@@ -309,12 +310,11 @@ function App() {
                 )
                 .then(
                   () => {
-                    alert("Message sent! I’ll be in touch soon.");
+                    setSent(true);
                     e.target.reset();
                   },
                   (error) => {
                     console.error("EmailJS error:", error);
-                    alert("Failed to send. Please try again.");
                   },
                 );
             }}
@@ -337,9 +337,13 @@ function App() {
               <textarea id="message" name="message" rows="4" required />
             </div>
 
-            <button className="submit-button" type="submit">
-              Send message
-            </button>
+            {sent ? (
+              <p className="success-message">Message received ✓</p>
+            ) : (
+              <button className="submit-button" type="submit">
+                Send message
+              </button>
+            )}
           </form>
           <div className="social-links">
             <a
