@@ -282,8 +282,9 @@ function App() {
             </a>
             <a
               href="/resume/zoe-blighton-resume-PDF.pdf"
-              download
+              download="Zoe-Blighton-Resume.pdf"
               className="btn"
+              type="application/pdf"
             >
               Download (PDF)
             </a>
