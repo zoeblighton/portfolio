@@ -1,21 +1,66 @@
 import "./App.css";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 function App() {
   const [sent, setSent] = useState(false);
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
+  // NEW
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const resumeUrl = "/resume/zoe-blighton-resume-PDF.pdf";
+
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setIsResumeOpen(false);
+        setIsMenuOpen(false); // NEW
+      }
+    };
+    if (isResumeOpen || isMenuOpen)
+      window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [isResumeOpen, isMenuOpen]);
+
+  const handleNavClick = () => setIsMenuOpen(false);
+
   return (
     <div className="app">
       <header>
         <div>
           <h1>Zoe Blighton</h1>
-          <nav>
-            <a href="#about">About</a> {" | "}
-            <a href="#projects">Projects</a> {" | "}
-            <a href="#resume">Resume</a> {" | "}
-            <a href="#contact">Contact</a>
+
+          {/* NEW: Hamburger button (mobile only via CSS) */}
+          <button
+            type="button"
+            className="menu-button"
+            aria-label="Open menu"
+            aria-controls="site-nav"
+            aria-expanded={isMenuOpen}
+            onClick={() => setIsMenuOpen((v) => !v)}
+          >
+            <span className="hamburger" aria-hidden="true" />
+          </button>
+
+          <nav id="site-nav" className={`site-nav ${isMenuOpen ? "open" : ""}`}>
+            <a href="#about" onClick={handleNavClick}>
+              About
+            </a>
+            <a href="#projects" onClick={handleNavClick}>
+              Projects
+            </a>
+            <a href="#resume" onClick={handleNavClick}>
+              Resume
+            </a>
+            <a href="#contact" onClick={handleNavClick}>
+              Contact
+            </a>
           </nav>
         </div>
       </header>
+
+      {/* ...rest of your file stays the same... */}
 
       <main>
         <section id="about">
@@ -272,19 +317,18 @@ function App() {
           <p>View my resume here:</p>
 
           <div className="resume-links">
-            <a
-              href="/resume/zoe-blighton-resume-PDF.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
               className="btn"
+              onClick={() => setIsResumeOpen(true)}
             >
               View
-            </a>
+            </button>
+
             <a
-              href="/resume/zoe-blighton-resume-PDF.pdf"
+              href={resumeUrl}
               download="Zoe-Blighton-Resume.pdf"
               className="btn"
-              type="application/pdf"
             >
               Download (PDF)
             </a>
@@ -394,6 +438,53 @@ function App() {
             </a>
           </div>
         </section>
+        {isResumeOpen && (
+          <div
+            className="modal-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Resume preview"
+            onClick={() => setIsResumeOpen(false)}
+          >
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <div className="modal-header">
+                <p className="modal-title">Resume</p>
+                <button
+                  type="button"
+                  className="modal-close"
+                  onClick={() => setIsResumeOpen(false)}
+                  aria-label="Close resume preview"
+                >
+                  ✕
+                </button>
+              </div>
+
+              <iframe
+                className="resume-frame"
+                src={resumeUrl}
+                title="Zoe Blighton Resume"
+              />
+
+              <div className="modal-footer">
+                <a
+                  className="btn"
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open in new tab
+                </a>
+                <a
+                  className="btn"
+                  href={resumeUrl}
+                  download="Zoe-Blighton-Resume.pdf"
+                >
+                  Download (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
 
       <footer>
