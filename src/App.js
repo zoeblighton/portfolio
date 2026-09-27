@@ -62,7 +62,7 @@ function App() {
         <section id="about">
           <div>
             <div>
-              <h2>Front-End Web Developer</h2>
+              <h2>Web &amp; Mobile App Developer</h2>
 
               <p>Based in Colchester, UK</p>
               <div>
@@ -75,15 +75,17 @@ function App() {
 
               <p className="about-card">
                 <strong> Hi, I'm Zoe.👋</strong>
-                <br />I build responsive, SEO-conscious web applications using
-                React and modern front-end tooling. I specialise in translating
-                ideas into clean, user-focused interfaces, delivering projects
-                from concept and design direction through to production
-                deployment. <br />
+                <br />I design and build web and mobile apps, from responsive,
+                SEO-conscious React websites to cross-platform mobile apps with
+                React Native and Expo, backed by serverless functions and
+                third-party APIs. I take projects from the first idea through
+                branding, UX and design to development and deployment, both for
+                clients and for my own products. <br />
                 My background in management within an early-years setting
                 strengthened my communication, organisation, and problem-solving
-                skills, which now support my work with clients and collaborative
-                projects in tech. I’m driven by continuous growth and enjoy
+                skills, and it’s the world behind Little Plans, the planning app
+                I’m building for early years practitioners. I’m driven by
+                continuous growth and enjoy
                 building thoughtful digital experiences that balance usability,
                 performance, and visual clarity. <br /> Outside of development,
                 you’ll find me climbing, practicing yoga, or exploring nature
@@ -97,7 +99,7 @@ function App() {
           <h2>Projects</h2>
 
           <article className="project-card">
-            <h3>Little Plans – Waitlist Landing Page</h3>
+            <h3>Little Plans – Landing Page &amp; Mobile App</h3>
             <p>
               Little Plans is an upcoming planning app for early years
               practitioners, offering weekly topic packs, age-adapted EYFS
@@ -115,6 +117,14 @@ function App() {
               Function that validates each email, adds it to a Resend mailing
               list, and sends a branded HTML confirmation email.
             </p>
+            <p>
+              Alongside the site, I'm building the Little Plans mobile app
+              itself with React Native and Expo (currently in development). It
+              uses React Navigation, with bottom tabs for Home, This Week,
+              Calendar and Saved, each with its own stack so activity details
+              can open within a tab. It shares the brand's colour theme with
+              the landing page and emails.
+            </p>
             <div>
               <img
                 className="littleplans-screenshot"
@@ -127,7 +137,8 @@ function App() {
               <p>
                 Founder, Designer & Developer. Responsible for brand identity,
                 UX and page design, front-end development, serverless email
-                integration, and deployment.
+                integration, deployment, and cross-platform mobile app
+                development.
               </p>
             </div>
             <div className="project-outcomes">
@@ -153,6 +164,10 @@ function App() {
                   Deployed on Netlify with serverless functions and
                   environment-based configuration
                 </li>
+                <li>
+                  Set up the cross-platform mobile app with tab and stack
+                  navigation, tested on iPad via Expo Go
+                </li>
               </ul>
             </div>
             <ul className="project-tags">
@@ -160,6 +175,9 @@ function App() {
               <li>Vite</li>
               <li>Netlify Functions</li>
               <li>Resend</li>
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>React Navigation</li>
               <li>UI/UX Design</li>
               <li>Responsive Design</li>
             </ul>
