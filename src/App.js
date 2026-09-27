@@ -64,7 +64,7 @@ function App() {
             <div>
               <h2>Web &amp; Mobile App Developer</h2>
 
-              <p>Based in Colchester, UK</p>
+              <p>Based in Suffolk, UK</p>
               <div>
                 <img
                   src={require("./headshot.jpg")}
@@ -85,11 +85,10 @@ function App() {
                 strengthened my communication, organisation, and problem-solving
                 skills, and it’s the world behind Little Plans, the planning app
                 I’m building for early years practitioners. I’m driven by
-                continuous growth and enjoy
-                building thoughtful digital experiences that balance usability,
-                performance, and visual clarity. <br /> Outside of development,
-                you’ll find me climbing, practicing yoga, or exploring nature
-                with my dog, Alfie.
+                continuous growth and enjoy building thoughtful digital
+                experiences that balance usability, performance, and visual
+                clarity. <br /> Outside of development, you’ll find me climbing,
+                practicing yoga, or exploring nature with my dog, Alfie.
               </p>
             </div>
           </div>
@@ -118,12 +117,12 @@ function App() {
               list, and sends a branded HTML confirmation email.
             </p>
             <p>
-              The Little Plans mobile app is my current project, and
-              development is still in progress. I'm building it with React
-              Native and Expo, using React Navigation, with bottom tabs for
-              Home, This Week, Calendar and Saved, each with its own stack so
-              activity details can open within a tab. It shares the brand's
-              colour theme with the landing page and emails.
+              The Little Plans mobile app is my current project, and development
+              is still in progress. I'm building it with React Native and Expo,
+              using React Navigation, with bottom tabs for Home, This Week,
+              Calendar and Saved, each with its own stack so activity details
+              can open within a tab. It shares the brand's colour theme with the
+              landing page and emails.
             </p>
             <div>
               <img
