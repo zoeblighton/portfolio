@@ -163,6 +163,7 @@ section {
 }
 section h2 {
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 section h2::after {
@@ -178,9 +179,6 @@ section h2::after {
 
 section + section {
   border-top: 1px solid #e5e7eb;
-}
-section h2 {
-  margin-bottom: 1.5rem;
 }
 
 .about-card {
@@ -240,19 +238,6 @@ ul {
 li {
   margin-bottom: 0.5rem;
 }
-#projects article {
-  background: #ffffff;
-  border-radius: 0.75rem;
-  padding: 1.25rem;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
-  border: 1px solid #e5e7eb;
-  margin-bottom: 1rem;
-}
-#projects article:hover,
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
-}
 .project-card {
   background: #ffffff;
   border-radius: 0.75rem;
@@ -265,7 +250,7 @@ li {
     box-shadow 0.2s ease;
 }
 .project-card:hover {
-  transform: scale(1.005);
+  transform: translateY(-3px);
   box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
 }
 
@@ -289,7 +274,8 @@ li {
 .weather-screenshot,
 .dictionary-screenshot,
 .pokemon-screenshot,
-.triplemoon-screenshot {
+.triplemoon-screenshot,
+.littleplans-screenshot {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -301,6 +287,20 @@ form {
   max-width: 480px;
   display: block;
   margin: 0 auto;
+}
+
+.success-message,
+.error-message {
+  text-align: center;
+  font-weight: 600;
+}
+
+.success-message {
+  color: #15803d;
+}
+
+.error-message {
+  color: #b91c1c;
 }
 
 form > div {
@@ -361,10 +361,6 @@ footer p {
     align-items: center;
     justify-content: space-between;
   }
-
-  #projects article {
-    display: block;
-  }
 }
 
 .resume-links {
@@ -401,9 +397,6 @@ footer p {
   box-shadow: 0 8px 20px rgb(0 0 0 / 0.08);
 }
 
-.btn-secondary {
-  background: #6a5acd;
-}
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -441,6 +434,7 @@ footer p {
 .modal-close {
   background: transparent;
   border: none;
+  color: #111827;
   font-size: 20px;
   cursor: pointer;
   line-height: 1;

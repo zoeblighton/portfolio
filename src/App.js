@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [sent, setSent] = useState(false);
+  const [sendError, setSendError] = useState(false);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
-
-  // NEW
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const resumeUrl = "/resume/zoe-blighton-resume-PDF.pdf";
@@ -15,7 +14,7 @@ function App() {
     const onKeyDown = (e) => {
       if (e.key === "Escape") {
         setIsResumeOpen(false);
-        setIsMenuOpen(false); // NEW
+        setIsMenuOpen(false);
       }
     };
     if (isResumeOpen || isMenuOpen)
@@ -129,29 +128,25 @@ function App() {
             </div>
             <div className="project-outcomes">
               <h4>Project Outcomes</h4>
-              <p>
-                <ul>
-                  <li>
-                    Delivered a fully responsive React application from concept
-                    to launch
-                  </li>
-                  <li>
-                    Led creative direction and UX decisions with full design
-                    autonomy
-                  </li>
-                  <li>
-                    Structured semantic HTML to support SEO best practices
-                  </li>
-                  <li>
-                    Deployed the site independently, managing build and
-                    production release
-                  </li>
-                  <li>
-                    Established scalable component architecture for future
-                    content expansion
-                  </li>
-                </ul>
-              </p>
+              <ul>
+                <li>
+                  Delivered a fully responsive React application from concept
+                  to launch
+                </li>
+                <li>
+                  Led creative direction and UX decisions with full design
+                  autonomy
+                </li>
+                <li>Structured semantic HTML to support SEO best practices</li>
+                <li>
+                  Deployed the site independently, managing build and
+                  production release
+                </li>
+                <li>
+                  Established scalable component architecture for future
+                  content expansion
+                </li>
+              </ul>
             </div>
 
             <ul className="project-tags">
@@ -167,7 +162,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live{" "}
+                Live
               </a>{" "}
               <a
                 href="https://github.com/zoeblighton/triple-moon"
@@ -191,7 +186,7 @@ function App() {
               interface. It integrates two separate APIs—one for retrieving
               dictionary data and another for fetching related images—showcasing
               my experience handling multiple asynchronous data sources within a
-              single application.{" "}
+              single application.
             </p>
             <div>
               <img
@@ -269,7 +264,7 @@ function App() {
           </article>
 
           <article className="project-card">
-            <h3>Pokemon generator</h3>
+            <h3>Pokémon Generator</h3>
             <p>
               As a themed project, I created a React app that lets users
               generate random Pokémon, search by name or ID, and build a
@@ -281,7 +276,7 @@ function App() {
               <img
                 className="pokemon-screenshot"
                 src={require("./pokemon-screenshot.png")}
-                alt="Pokemon Screenshot"
+                alt="Pokémon Generator Screenshot"
               />
             </div>
             <ul className="project-tags">
@@ -292,7 +287,7 @@ function App() {
             <div className="project-links">
               {" "}
               <a
-                href="https://pokemon-randomiser.netlify.app//"
+                href="https://pokemon-randomiser.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -300,6 +295,89 @@ function App() {
               </a>{" "}
               <a
                 href="https://github.com/zoeblighton/pokemon-random-search"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+            </div>
+          </article>
+
+          <article className="project-card">
+            <h3>Little Plans – Waitlist Landing Page (Personal Product)</h3>
+            <p>
+              Little Plans is an upcoming planning app for early years
+              practitioners, offering weekly topic packs, age-adapted EYFS
+              activities and automatic shopping lists. I designed and built its
+              landing page in React to explain the product, show pricing, and
+              build a waitlist ahead of launch.
+            </p>
+            <p>
+              The site uses a component-based architecture, with each section
+              (hero, features, how it works, EYFS areas, pricing and sign-up)
+              built as a reusable component and all copy kept in a separate
+              content file. I added scroll-triggered reveal animations using a
+              custom Intersection Observer hook, and optimised the layout for
+              mobile. The waitlist form is backed by a serverless Netlify
+              Function that validates each email, adds it to a Resend mailing
+              list, and sends a branded HTML confirmation email.
+            </p>
+            <div>
+              <img
+                className="littleplans-screenshot"
+                src={require("./little-plans-screenshot.png")}
+                alt="Little Plans landing page screenshot"
+              />
+            </div>
+            <div className="project-role">
+              <h4>My Role</h4>
+              <p>
+                Founder, Designer & Developer. Responsible for brand identity,
+                UX and page design, front-end development, serverless email
+                integration, and deployment.
+              </p>
+            </div>
+            <div className="project-outcomes">
+              <h4>Project Outcomes</h4>
+              <ul>
+                <li>
+                  Designed and launched a responsive landing page to validate
+                  demand for a new product
+                </li>
+                <li>
+                  Built a working waitlist with serverless email sign-up and
+                  automated confirmation emails
+                </li>
+                <li>
+                  Created a consistent brand system, carried through the site,
+                  emails and the companion mobile app
+                </li>
+                <li>
+                  Structured content in a separate data file so features and
+                  pricing are easy to update
+                </li>
+                <li>
+                  Deployed on Netlify with serverless functions and
+                  environment-based configuration
+                </li>
+              </ul>
+            </div>
+            <ul className="project-tags">
+              <li>React</li>
+              <li>Vite</li>
+              <li>Netlify Functions</li>
+              <li>Resend</li>
+              <li>UI/UX Design</li>
+              <li>Responsive Design</li>
+            </ul>
+            <div className="project-links">
+              {/* TODO: uncomment once the live site URL is ready
+              <a href="LIVE-SITE-URL" target="_blank" rel="noopener noreferrer">
+                Live
+              </a>{" "}
+              */}
+              <a
+                href="https://github.com/zoeblighton/little-plans-site"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -342,6 +420,7 @@ function App() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              setSendError(false);
 
               emailjs
                 .sendForm(
@@ -357,6 +436,7 @@ function App() {
                   },
                   (error) => {
                     console.error("EmailJS error:", error);
+                    setSendError(true);
                   },
                 );
             }}
@@ -379,6 +459,13 @@ function App() {
               <textarea id="message" name="message" rows="4" required />
             </div>
 
+            {sendError && (
+              <p className="error-message" role="alert">
+                Sorry, your message couldn't be sent. Please try again or email
+                me directly.
+              </p>
+            )}
+
             {sent ? (
               <p className="success-message">Message received ✓</p>
             ) : (
@@ -395,7 +482,7 @@ function App() {
             >
               <img
                 src={require("./linked-in-icon.png")}
-                alt="LinkedIn Icon"
+                alt="LinkedIn"
                 width={50}
               />
             </a>
@@ -407,7 +494,7 @@ function App() {
             >
               <img
                 src={require("./github-icon.png")}
-                alt="Github Icon"
+                alt="GitHub"
                 width={50}
               />
             </a>
@@ -420,7 +507,7 @@ function App() {
             >
               <img
                 src={require("./shecodes-icon.png")}
-                alt="SheCodes Icon"
+                alt="SheCodes"
                 width={50}
               />
             </a>
@@ -429,7 +516,7 @@ function App() {
             <a href="mailto:zoeblighton.seo@gmail.com">
               <img
                 src={require("./email-icon.png")}
-                alt="Email Icon"
+                alt="Email"
                 width={50}
               />
             </a>
@@ -485,7 +572,7 @@ function App() {
       </main>
 
       <footer>
-        <p> {new Date().getFullYear()} Coded by Zoe Blighton</p>
+        <p>© {new Date().getFullYear()} Coded by Zoe Blighton</p>
       </footer>
     </div>
   );
