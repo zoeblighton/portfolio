@@ -118,12 +118,12 @@ function App() {
               list, and sends a branded HTML confirmation email.
             </p>
             <p>
-              Alongside the site, I'm building the Little Plans mobile app
-              itself with React Native and Expo (currently in development). It
-              uses React Navigation, with bottom tabs for Home, This Week,
-              Calendar and Saved, each with its own stack so activity details
-              can open within a tab. It shares the brand's colour theme with
-              the landing page and emails.
+              The Little Plans mobile app is my current project, and
+              development is still in progress. I'm building it with React
+              Native and Expo, using React Navigation, with bottom tabs for
+              Home, This Week, Calendar and Saved, each with its own stack so
+              activity details can open within a tab. It shares the brand's
+              colour theme with the landing page and emails.
             </p>
             <div>
               <img
