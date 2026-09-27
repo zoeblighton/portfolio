@@ -97,6 +97,89 @@ function App() {
           <h2>Projects</h2>
 
           <article className="project-card">
+            <h3>Little Plans – Waitlist Landing Page</h3>
+            <p>
+              Little Plans is an upcoming planning app for early years
+              practitioners, offering weekly topic packs, age-adapted EYFS
+              activities and automatic shopping lists. I designed and built its
+              landing page in React to explain the product, show pricing, and
+              build a waitlist ahead of launch.
+            </p>
+            <p>
+              The site uses a component-based architecture, with each section
+              (hero, features, how it works, EYFS areas, pricing and sign-up)
+              built as a reusable component and all copy kept in a separate
+              content file. I added scroll-triggered reveal animations using a
+              custom Intersection Observer hook, and optimised the layout for
+              mobile. The waitlist form is backed by a serverless Netlify
+              Function that validates each email, adds it to a Resend mailing
+              list, and sends a branded HTML confirmation email.
+            </p>
+            <div>
+              <img
+                className="littleplans-screenshot"
+                src={require("./little-plans-screenshot.png")}
+                alt="Little Plans landing page screenshot"
+              />
+            </div>
+            <div className="project-role">
+              <h4>My Role</h4>
+              <p>
+                Founder, Designer & Developer. Responsible for brand identity,
+                UX and page design, front-end development, serverless email
+                integration, and deployment.
+              </p>
+            </div>
+            <div className="project-outcomes">
+              <h4>Project Outcomes</h4>
+              <ul>
+                <li>
+                  Designed and launched a responsive landing page to validate
+                  demand for a new product
+                </li>
+                <li>
+                  Built a working waitlist with serverless email sign-up and
+                  automated confirmation emails
+                </li>
+                <li>
+                  Created a consistent brand system, carried through the site,
+                  emails and the companion mobile app
+                </li>
+                <li>
+                  Structured content in a separate data file so features and
+                  pricing are easy to update
+                </li>
+                <li>
+                  Deployed on Netlify with serverless functions and
+                  environment-based configuration
+                </li>
+              </ul>
+            </div>
+            <ul className="project-tags">
+              <li>React</li>
+              <li>Vite</li>
+              <li>Netlify Functions</li>
+              <li>Resend</li>
+              <li>UI/UX Design</li>
+              <li>Responsive Design</li>
+            </ul>
+            <div className="project-links">
+              {/* TODO: uncomment once the live site URL is ready
+              <a href="LIVE-SITE-URL" target="_blank" rel="noopener noreferrer">
+                Live
+              </a>{" "}
+              */}
+              <a
+                href="https://github.com/zoeblighton/little-plans-site"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+            </div>
+          </article>
+
+          <article className="project-card">
             <h3>Triple Moon – Living Magically (Client Project)</h3>
             <p>
               Triple Moon is a client project built in React. The client gave me
@@ -130,8 +213,8 @@ function App() {
               <h4>Project Outcomes</h4>
               <ul>
                 <li>
-                  Delivered a fully responsive React application from concept
-                  to launch
+                  Delivered a fully responsive React application from concept to
+                  launch
                 </li>
                 <li>
                   Led creative direction and UX decisions with full design
@@ -139,12 +222,12 @@ function App() {
                 </li>
                 <li>Structured semantic HTML to support SEO best practices</li>
                 <li>
-                  Deployed the site independently, managing build and
-                  production release
+                  Deployed the site independently, managing build and production
+                  release
                 </li>
                 <li>
-                  Established scalable component architecture for future
-                  content expansion
+                  Established scalable component architecture for future content
+                  expansion
                 </li>
               </ul>
             </div>
@@ -302,89 +385,6 @@ function App() {
               </a>
             </div>
           </article>
-
-          <article className="project-card">
-            <h3>Little Plans – Waitlist Landing Page (Personal Product)</h3>
-            <p>
-              Little Plans is an upcoming planning app for early years
-              practitioners, offering weekly topic packs, age-adapted EYFS
-              activities and automatic shopping lists. I designed and built its
-              landing page in React to explain the product, show pricing, and
-              build a waitlist ahead of launch.
-            </p>
-            <p>
-              The site uses a component-based architecture, with each section
-              (hero, features, how it works, EYFS areas, pricing and sign-up)
-              built as a reusable component and all copy kept in a separate
-              content file. I added scroll-triggered reveal animations using a
-              custom Intersection Observer hook, and optimised the layout for
-              mobile. The waitlist form is backed by a serverless Netlify
-              Function that validates each email, adds it to a Resend mailing
-              list, and sends a branded HTML confirmation email.
-            </p>
-            <div>
-              <img
-                className="littleplans-screenshot"
-                src={require("./little-plans-screenshot.png")}
-                alt="Little Plans landing page screenshot"
-              />
-            </div>
-            <div className="project-role">
-              <h4>My Role</h4>
-              <p>
-                Founder, Designer & Developer. Responsible for brand identity,
-                UX and page design, front-end development, serverless email
-                integration, and deployment.
-              </p>
-            </div>
-            <div className="project-outcomes">
-              <h4>Project Outcomes</h4>
-              <ul>
-                <li>
-                  Designed and launched a responsive landing page to validate
-                  demand for a new product
-                </li>
-                <li>
-                  Built a working waitlist with serverless email sign-up and
-                  automated confirmation emails
-                </li>
-                <li>
-                  Created a consistent brand system, carried through the site,
-                  emails and the companion mobile app
-                </li>
-                <li>
-                  Structured content in a separate data file so features and
-                  pricing are easy to update
-                </li>
-                <li>
-                  Deployed on Netlify with serverless functions and
-                  environment-based configuration
-                </li>
-              </ul>
-            </div>
-            <ul className="project-tags">
-              <li>React</li>
-              <li>Vite</li>
-              <li>Netlify Functions</li>
-              <li>Resend</li>
-              <li>UI/UX Design</li>
-              <li>Responsive Design</li>
-            </ul>
-            <div className="project-links">
-              {/* TODO: uncomment once the live site URL is ready
-              <a href="LIVE-SITE-URL" target="_blank" rel="noopener noreferrer">
-                Live
-              </a>{" "}
-              */}
-              <a
-                href="https://github.com/zoeblighton/little-plans-site"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code
-              </a>
-            </div>
-          </article>
         </section>
 
         <section id="resume">
@@ -492,11 +492,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src={require("./github-icon.png")}
-                alt="GitHub"
-                width={50}
-              />
+              <img src={require("./github-icon.png")} alt="GitHub" width={50} />
             </a>
 
             {"  "}
@@ -514,11 +510,7 @@ function App() {
 
             {"  "}
             <a href="mailto:zoeblighton.seo@gmail.com">
-              <img
-                src={require("./email-icon.png")}
-                alt="Email"
-                width={50}
-              />
+              <img src={require("./email-icon.png")} alt="Email" width={50} />
             </a>
           </div>
         </section>
