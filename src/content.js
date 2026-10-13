@@ -3,6 +3,7 @@
 // they exist; swap a file in /src and update the import to replace one.
 
 import headshot from "./headshot.jpg";
+import dearDiary from "./dear-diary-screenshot.png";
 import littlePlans from "./little-plans-screenshot.png";
 import tripleMoon from "./triplemoon-screenshot.png";
 import dictionary from "./dictionary-app-screenshot.png";
@@ -81,6 +82,23 @@ export const contact = {
 // `tone` is the background colour behind the screenshot.
 // `href` is where clicking the project goes (live site, else code).
 export const projects = [
+  {
+    slug: "dear-diary-art-club",
+    title: "Dear Diary Art Club",
+    titleLines: ["Dear Diary", "Art Club"],
+    year: "2026",
+    discipline: "Client — Website",
+    summary:
+      "A brand site for an artist’s hand-painted greetings cards, made in the Suffolk countryside. Prerendered React pages for speed and SEO, a live Instagram feed and newsletter sign-ups via Netlify Functions, with shopping handed off to Etsy and Faire.",
+    role: "Sole designer & developer",
+    tags: ["React", "TypeScript", "Vite", "Netlify Functions", "Instagram API", "SEO"],
+    image: dearDiary,
+    imageAlt: "Dear Diary Art Club homepage: “Beautifully illustrated. A little bit witty.”",
+    tone: "#E9D6D4",
+    layout: "feature",
+    href: "https://dear-diary-art-club.netlify.app/",
+    links: [{ label: "Live", href: "https://dear-diary-art-club.netlify.app/" }],
+  },
   {
     slug: "little-plans",
     title: "Little Plans",
