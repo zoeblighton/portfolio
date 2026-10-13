@@ -60,17 +60,10 @@ export default function Contact({ onOpenResume }) {
       <Lines
         id="contact-title"
         className="contact__headline"
-        fit
         lines={[
-          { content: contact.headline[0], className: "is-left" },
-          {
-            content: (
-              <span className="serif">
-                {contact.headline[1]}
-              </span>
-            ),
-            className: "is-right",
-          },
+          <>
+            {contact.headline[0]} <span className="serif">{contact.headline[1]}</span>
+          </>,
         ]}
       />
 
