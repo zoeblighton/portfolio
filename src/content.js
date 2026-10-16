@@ -19,8 +19,8 @@ export const site = {
   timeZone: "Europe/London",
   availability: "Open to new projects",
   email: "zoeblighton.seo@gmail.com",
-  resumeUrl: "/resume/ZoeBlightonCV.pdf",
-  resumeFileName: "Zoe-Blighton-CV.pdf",
+  resumeUrl: "/resume/ZoeBlightonResume.pdf",
+  resumeFileName: "Zoe-Blighton-Resume.pdf",
 };
 
 export const hero = {
