@@ -114,8 +114,9 @@ export const projects = [
     imageAlt: "Little Plans landing page: “Stop planning. Start teaching.”",
     tone: "#DCDFD0",
     layout: "feature",
-    href: "https://github.com/zoeblighton/little-plans-site",
+    href: "https://littleplansapp.com/",
     links: [
+      { label: "Live", href: "https://littleplansapp.com/" },
       { label: "Code", href: "https://github.com/zoeblighton/little-plans-site" },
     ],
   },
@@ -133,9 +134,9 @@ export const projects = [
     imageAlt: "Triple Moon website homepage: “Come home to yourself”",
     tone: "#E5DECB",
     layout: "split",
-    href: "https://triplemoon.netlify.app/",
+    href: "https://triplemoon.co.uk/",
     links: [
-      { label: "Live", href: "https://triplemoon.netlify.app/" },
+      { label: "Live", href: "https://triplemoon.co.uk/" },
       { label: "Code", href: "https://github.com/zoeblighton/triple-moon" },
     ],
   },
