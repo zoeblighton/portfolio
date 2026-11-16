@@ -158,23 +158,32 @@ export const projects = [
       { label: "Code", href: "https://github.com/zoeblighton/triple-moon" },
     ],
   },
+];
+
+// Smaller apps from learning React, listed compactly after the projects.
+// `image` and `tone` drive the cursor preview on hover.
+export const experiments = [
+  {
+    slug: "pokemon",
+    title: "Pokémon",
+    year: "2026",
+    summary: "A Game Boy–style randomiser and search built on the PokéAPI.",
+    tags: ["React", "PokéAPI"],
+    image: pokemon,
+    tone: "#D5D9C3",
+    links: [
+      { label: "Live", href: "https://pokemon-randomiser.netlify.app/" },
+      { label: "Code", href: "https://github.com/zoeblighton/pokemon-random-search" },
+    ],
+  },
   {
     slug: "dictionary",
     title: "Dictionary",
-    titleLines: ["Dictionary"],
     year: "2025",
-    discipline: "Web App",
-    // Shown like a dictionary entry beneath the title.
-    phonetic: "/ˈdɪk.ʃə.nər.i/ noun",
-    summary:
-      "Type a word, get definitions, phonetics, synonyms and a gallery of related images — two APIs orchestrated into one calm interface.",
-    role: "Design & development",
-    tags: ["React", "Async JS", "REST APIs"],
+    summary: "Definitions, phonetics, synonyms and images from two APIs in one calm interface.",
+    tags: ["React", "REST APIs"],
     image: dictionary,
-    imageAlt: "Dictionary app showing results for the word “success”",
     tone: "#E2E0DA",
-    layout: "type",
-    href: "https://enchanting-gingersnap-0e85cd.netlify.app/",
     links: [
       { label: "Live", href: "https://enchanting-gingersnap-0e85cd.netlify.app/" },
       { label: "Code", href: "https://github.com/zoeblighton/dictionary-project" },
@@ -183,41 +192,14 @@ export const projects = [
   {
     slug: "weather",
     title: "Weather",
-    titleLines: ["Weather"],
     year: "2025",
-    discipline: "Web App",
-    summary:
-      "Search any city for current conditions and a five-day forecast, with graceful handling of bad searches.",
-    role: "Design & development",
-    tags: ["React", "Axios", "API"],
+    summary: "Current conditions and a five-day forecast for any city.",
+    tags: ["React", "Axios"],
     image: weather,
-    imageAlt: "Weather app showing London at 11°C with a five-day forecast",
     tone: "#DFDDEC",
-    layout: "pair",
-    href: "https://steady-cendol-19e8c9.netlify.app/",
     links: [
       { label: "Live", href: "https://steady-cendol-19e8c9.netlify.app/" },
       { label: "Code", href: "https://github.com/zoeblighton/weather-react-app" },
-    ],
-  },
-  {
-    slug: "pokemon",
-    title: "Pokémon",
-    titleLines: ["Pokémon"],
-    year: "2026",
-    discipline: "Web App",
-    summary:
-      "Generate, search and build a six-Pokémon party in a Game Boy–style interface powered by the PokéAPI.",
-    role: "Design & development",
-    tags: ["React", "CSS", "API"],
-    image: pokemon,
-    imageAlt: "Pokémon randomiser showing Dragonair and a six-Pokémon party",
-    tone: "#D5D9C3",
-    layout: "pair",
-    href: "https://pokemon-randomiser.netlify.app/",
-    links: [
-      { label: "Live", href: "https://pokemon-randomiser.netlify.app/" },
-      { label: "Code", href: "https://github.com/zoeblighton/pokemon-random-search" },
     ],
   },
 ];

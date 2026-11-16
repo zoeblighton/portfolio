@@ -376,6 +376,76 @@
   }
 }
 
+/* ---------- Earlier experiments: a compact list after the projects ---------- */
+.experiments {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  row-gap: 2rem;
+  align-items: start;
+  margin-top: clamp(10rem, 20vw, 20rem);
+}
+.experiments__intro {
+  grid-column: 1 / span 4;
+}
+.experiments__lede {
+  max-width: 22ch;
+  margin-top: 0.75rem;
+  font-size: var(--fs-small);
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--ink-2);
+}
+.experiments__list {
+  grid-column: 5 / -1;
+  border-bottom: 1px solid var(--line);
+}
+.experiments__row {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.9fr) minmax(0, 2fr) auto 3.25rem;
+  align-items: baseline;
+  gap: 0.35rem var(--gap);
+  padding: 0.95rem 0 0.85rem;
+  border-top: 1px solid var(--line);
+  transition: opacity 0.6s var(--ease);
+}
+.experiments__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 1.4vw, 1.375rem);
+  font-weight: 700;
+  font-stretch: 85%;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.experiments__summary {
+  font-size: var(--fs-small);
+  line-height: 1.35;
+  color: var(--ink-2);
+}
+.experiments__links {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--font-display);
+  font-size: var(--fs-label);
+  font-weight: 500;
+  font-stretch: 88%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.experiments__year {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--ink-2);
+}
+@media (hover: hover) {
+  .experiments__list:hover .experiments__row:not(:hover) {
+    opacity: 0.3;
+  }
+}
+
 /* =========================================================
    Projects – shared parts
    ========================================================= */
@@ -1125,6 +1195,10 @@
   .index {
     grid-column: 1 / -1;
   }
+  .experiments__intro,
+  .experiments__list {
+    grid-column: 1 / -1;
+  }
 
   .project--feature .project__title {
     grid-column: 1 / span 7;
@@ -1279,6 +1353,21 @@
   }
   .index__disc {
     display: none;
+  }
+  /* Experiments stack: name and year, then summary, then links */
+  .experiments__row {
+    grid-template-columns: 1fr auto;
+  }
+  .experiments__year {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .experiments__summary,
+  .experiments__links {
+    grid-column: 1 / -1;
+  }
+  .experiments__links {
+    margin-top: 0.35rem;
   }
 
   .project__kicker {

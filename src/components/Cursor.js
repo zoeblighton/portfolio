@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { projects } from "../content";
+import { experiments, projects } from "../content";
+
+const previews = [...projects, ...experiments];
 
 // A quiet cursor companion for fine pointers only. Over elements marked
 // data-cursor="image" (with data-cursor-src set to a project slug) it shows
-// that project's screenshot. Anything inside [data-cursor-off] hides it.
+// that project's (or experiment's) screenshot. Anything inside [data-cursor-off] hides it.
 export default function Cursor() {
   const ref = useRef(null);
   const [enabled, setEnabled] = useState(false);
@@ -64,7 +66,7 @@ export default function Cursor() {
   return (
     <div className="cursor" ref={ref} aria-hidden="true">
       <div className={`cursor__preview ${state.mode === "image" ? "is-on" : ""}`}>
-        {projects.map((p) => (
+        {previews.map((p) => (
           <div
             key={p.slug}
             className={`cursor__plate ${state.src === p.slug ? "is-on" : ""}`}
