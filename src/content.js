@@ -90,9 +90,9 @@ export const projects = [
     year: "2026",
     discipline: "Web App",
     summary:
-      "An atmospheric music discovery app that nudges listeners beyond their usual orbit — wander by mood, genre and atmosphere, find your frequency and build a personal universe of saved sounds. A FastAPI backend keeps Spotify credentials server-side and powers live search, with clearly labelled sample data as a fallback.",
+      "An atmospheric music discovery app that nudges listeners beyond their usual orbit — wander by mood, genre and atmosphere, find your frequency and build a personal universe of saved sounds. A FastAPI backend on Render powers live Spotify search and secure Spotify login, bringing listeners’ liked songs, followed artists and playlists into the app — with tokens kept server-side and labelled sample data as a fallback.",
     role: "Design & full-stack development",
-    tags: ["React", "Vite", "Python", "FastAPI", "Spotify Web API"],
+    tags: ["React", "Vite", "Python", "FastAPI", "Spotify Web API", "OAuth"],
     image: astra,
     imageAlt: "Astra Discover page: “Every sound opens a new universe.”",
     tone: "#D8D2DC",
