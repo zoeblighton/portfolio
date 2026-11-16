@@ -328,7 +328,7 @@ export const caseStudies = {
   },
 
   "little-plans": {
-    lede: "A planning app for early years practitioners, shaped by nine years of doing the job myself.",
+    lede: "A planning app for early years practitioners, shaped by ten years of doing the job myself.",
     facts: [
       { label: "Role", value: "Founder, designer & developer" },
       { label: "Status", value: "Waitlist live · app in testing" },
@@ -339,7 +339,7 @@ export const caseStudies = {
       {
         title: "The problem",
         body: [
-          "Before moving into development, I spent nine years at a Montessori nursery as a teacher and assistant manager. Every week meant planning activities across age groups, checking them against the EYFS, buying resources and keeping parents informed — usually in our own time.",
+          "Before moving into development, I spent ten years working in early years, the last eight at a Montessori nursery as a teacher and assistant manager. Every week meant planning activities across age groups, checking them against the EYFS, buying resources and keeping parents informed — usually in our own time.",
           "Little Plans turns that into minutes: choose a weekly topic and a room, and get a ready-made week of activities, a shopping list and a sheet for families.",
         ],
       },
