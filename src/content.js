@@ -3,6 +3,7 @@
 // they exist; swap a file in /src and update the import to replace one.
 
 import headshot from "./headshot.jpg";
+import astra from "./astra-screenshot.png";
 import dearDiary from "./dear-diary-screenshot.png";
 import littlePlans from "./little-plans-screenshot.png";
 import tripleMoon from "./triplemoon-screenshot.png";
@@ -82,6 +83,26 @@ export const contact = {
 // `tone` is the background colour behind the screenshot.
 // `href` is where clicking the project goes (live site, else code).
 export const projects = [
+  {
+    slug: "astra",
+    title: "Astra",
+    titleLines: ["Astra"],
+    year: "2026",
+    discipline: "Web App",
+    summary:
+      "An atmospheric music discovery app that nudges listeners beyond their usual orbit — wander by mood, genre and atmosphere, find your frequency and build a personal universe of saved sounds. A FastAPI backend keeps Spotify credentials server-side and powers live search, with clearly labelled sample data as a fallback.",
+    role: "Design & full-stack development",
+    tags: ["React", "Vite", "Python", "FastAPI", "Spotify Web API"],
+    image: astra,
+    imageAlt: "Astra Discover page: “Every sound opens a new universe.”",
+    tone: "#D8D2DC",
+    layout: "split",
+    href: "https://astra-music-app.netlify.app/",
+    links: [
+      { label: "Live", href: "https://astra-music-app.netlify.app/" },
+      { label: "Code", href: "https://github.com/zoeblighton/astra" },
+    ],
+  },
   {
     slug: "dear-diary-art-club",
     title: "Dear Diary Art Club",
