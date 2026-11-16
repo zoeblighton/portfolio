@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Zoe Blighton: portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My portfolio, built as a typography-led editorial site in React.
 
-## Available Scripts
+**[zoeblighton.com →](https://zoeblighton.com)**
 
-In the project directory, you can run:
+![The portfolio homepage: "Zoe Blighton." set in large condensed type](public/og-image.png)
 
-### `npm start`
+## Design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Type as the main visual.** Headlines are fitted edge to edge by a small hook (`useFit`) that measures each line and scales it to the container. Bricolage Grotesque handles the display type and Newsreader the body and italic asides.
+- **Art-directed projects.** Each project picks one of four layouts (feature, split, type-led or a staggered pair), so the work section reads like a magazine spread rather than a card grid. The type-led layout previews its screenshot under the cursor.
+- **Quiet motion.** Lines and images reveal on scroll (`useReveal`, IntersectionObserver), and the header hides as you scroll down. All of it switches off under `prefers-reduced-motion`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built with
 
-### `npm test`
+React 19 (Create React App), plain CSS, EmailJS for the contact form. Hosted on Netlify.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Editing content
 
-### `npm run build`
+All copy, projects, links and the CV path live in [`src/content.js`](src/content.js). Layout code never needs touching to update the site:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Add a project**: add an entry to `projects` and import its screenshot from `src/`. Choose a `layout`: `"feature"`, `"split"`, `"type"` or `"pair"` (consecutive pairs sit side by side).
+- **Replace the CV**: put the PDF in `public/resume/` and update `resumeUrl`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Run locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+npm start        # http://localhost:3000
+npm run build    # production build in build/
+```
 
-### `npm run eject`
+## Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+src/
+  content.js    all editable content
+  components/   Header, Hero, Work, Project, About, Contact, ResumeModal, Cursor…
+  hooks/        useFit (fit headlines to width), useReveal (scroll reveals)
+public/         CV, share image, sitemap
+```
