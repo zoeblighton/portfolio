@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { site } from "../content";
 
+// Work and About live on the home page, so those links go there from a
+// case study; Contact closes every page.
 const links = [
-  { href: "#work", label: "Work" },
-  { href: "#about", label: "About" },
+  { href: "/#work", label: "Work" },
+  { href: "/#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -35,7 +37,7 @@ export default function Header() {
 
   return (
     <header className={`header${scrolled ? " is-scrolled" : ""}${hidden ? " is-hidden" : ""}`}>
-      <a className="header__mark" href="#top" aria-label={`${site.firstName} ${site.lastName}, back to top`}>
+      <a className="header__mark" href="/#top" aria-label={`${site.firstName} ${site.lastName}, home`}>
         {site.firstName} {site.lastName}
       </a>
       <nav aria-label="Primary">

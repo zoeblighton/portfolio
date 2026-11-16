@@ -1,7 +1,10 @@
 // One art-directed project. Every layout shares the same parts – kicker,
 // title, image, details – arranged differently. A cover link spans the whole
 // project so it is clickable anywhere; the title link is the keyboard
-// target, and the Live/Code links sit above the cover.
+// target, and the Case study/Live/Code links sit above the cover.
+
+import { caseStudies } from "../content";
+import { caseStudyPath } from "./CaseStudy";
 
 function Kicker({ number, project }) {
   return (
@@ -77,6 +80,14 @@ function Details({ project, showSummary = true, compact = false }) {
         </dl>
       )}
       <ul className="project__links" data-cursor-off="">
+        {caseStudies[project.slug] && (
+          <li>
+            <a className="link-underline project__case" href={caseStudyPath(project.slug)}>
+              Case study <span aria-hidden="true">→</span>
+              <span className="visually-hidden"> for {project.title}</span>
+            </a>
+          </li>
+        )}
         {project.links.map((l) => (
           <li key={l.label}>
             <a className="link-underline" href={l.href} target="_blank" rel="noopener noreferrer">

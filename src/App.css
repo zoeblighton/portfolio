@@ -818,6 +818,171 @@
 }
 
 /* =========================================================
+   Case study pages (/work/<slug>)
+   ========================================================= */
+.project__case {
+  color: var(--accent);
+}
+
+.case {
+  padding: calc(var(--header-h) + clamp(1.5rem, 4vw, 3.5rem)) var(--gutter) 0;
+}
+.case__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  margin-bottom: clamp(2.5rem, 7vw, 6rem);
+}
+.case__top a {
+  color: var(--ink);
+}
+.case__title {
+  font-family: var(--font-display);
+  font-size: 18vw;
+  font-weight: 800;
+  font-stretch: var(--stretch-display);
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.case__intro {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  row-gap: 2.5rem;
+  margin-top: clamp(2.5rem, 6vw, 5rem);
+}
+.case__lede {
+  grid-column: 1 / span 7;
+  font-size: var(--fs-lede);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.case__aside {
+  grid-column: 9 / -1;
+  align-self: end;
+  display: grid;
+  gap: 1.75rem;
+}
+.case__facts div {
+  grid-template-columns: 5.5rem 1fr;
+}
+
+.case__hero {
+  --frame-pad: 6%;
+  margin: clamp(3rem, 7vw, 6rem) calc(var(--gutter) * -1) 0;
+  aspect-ratio: 16 / 9;
+}
+
+/* Chapters: number and heading on the left, text on the right */
+.case__section {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  row-gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+  margin-top: clamp(6rem, 12vw, 11rem);
+}
+.case__head {
+  grid-column: 1 / span 4;
+  display: grid;
+  gap: 0.75rem;
+}
+.case__num {
+  color: var(--accent);
+}
+.case__heading {
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2.6vw, 2.75rem);
+  font-weight: 700;
+  font-stretch: 85%;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+}
+.case__body {
+  grid-column: 6 / span 6;
+  font-size: clamp(1.0625rem, 1.2vw, 1.25rem);
+  line-height: 1.55;
+}
+.case__body p {
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+.case__body p + p {
+  margin-top: 1em;
+}
+
+.case__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 2px rgba(18, 17, 16, 0.06),
+    0 30px 70px -30px rgba(18, 17, 16, 0.38);
+}
+.case__figure--wide {
+  grid-column: 2 / -2;
+}
+/* Phone screens sit beside the text */
+.case__section--phone .case__body {
+  grid-column: 6 / span 4;
+}
+.case__figure--phone {
+  grid-column: 10 / -1;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  width: min(100%, 260px);
+}
+.case__figure--phone img {
+  border-radius: 22px;
+}
+
+.case__next {
+  display: grid;
+  gap: 1rem;
+  margin-top: clamp(8rem, 16vw, 14rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.case__next-link {
+  justify-self: start;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 8vw, 8rem);
+  font-weight: 800;
+  font-stretch: var(--stretch-display);
+  line-height: 0.85;
+  text-transform: uppercase;
+  transition: color 0.4s var(--ease);
+}
+.case__next-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .case__lede,
+  .case__aside,
+  .case__head,
+  .case__body,
+  .case__section--phone .case__body,
+  .case__figure--wide {
+    grid-column: 1 / -1;
+  }
+  .case__figure--phone {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-self: start;
+    width: min(70%, 260px);
+  }
+  .case__hero {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* =========================================================
    Contact – the closing poster
    ========================================================= */
 .contact {
