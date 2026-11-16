@@ -136,10 +136,7 @@ export const projects = [
     tone: "#DCDFD0",
     layout: "feature",
     href: "https://littleplansapp.com/",
-    links: [
-      { label: "Live", href: "https://littleplansapp.com/" },
-      { label: "Code", href: "https://github.com/zoeblighton/little-plans-site" },
-    ],
+    links: [{ label: "Live", href: "https://littleplansapp.com/" }],
   },
   {
     slug: "triple-moon",
